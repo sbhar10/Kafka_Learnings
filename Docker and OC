@@ -1,0 +1,12 @@
+Docker commands
+docker login docker.optum.com
+docker tag springio/myspringbootapp sbhar10/testrepo_shashi:DEV
+docker push sbhar10/testrepo_shashi:DEV
+
+
+
+OC commands
+
+oc login https://ocp-ctc-core-nonprod.optum.com
+oc project hedispoc
+oc new-app sbhar10/testrepo_shashi:DEV
